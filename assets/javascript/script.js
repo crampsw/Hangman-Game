@@ -9,7 +9,7 @@ var hangmanGame = {
 	blankCount:0,
 	
 	//Words go here!
-	wordList:["test", "the", "game", "array"],
+	wordList:["antagonistic", "truculent", "aggressive", "vexation", "ramgage", "tantrum", "rage"],
 	
 	//working variables
 	lettersGuessed:[],
@@ -99,6 +99,7 @@ var hangmanGame = {
 				this.victoryState = true;
 				this.winCount++;
 				this.win_count.innerHTML = this.winCount;
+				alert("You guessed the word:  " + this.activeWord)
 				this.setWord();
 			}
 		}
