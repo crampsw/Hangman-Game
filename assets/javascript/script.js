@@ -43,6 +43,8 @@ var hangmanGame = {
 		console.log(this.activeArray);
 		this.victoryState = false;
 		console.log(this.victoryState);
+		this.letterCount = 0;
+		this.blankCount = 0;
 		
 		//updates html for everything
 		this.win_count.innerHTML = this.winCount;
