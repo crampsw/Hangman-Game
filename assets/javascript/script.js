@@ -90,8 +90,9 @@ var hangmanGame = {
 			}
 			// Checks for a loss and resets the game
 			if (this.guessCount == 0) {
+				this.victoryState = false;
 				this.active_word.innerHTML = this.activeWord;
-				alert("Hey loser, the word was " + this.activeWord)
+				alert("Hey loser, the word was " + this.activeWord);
 				this.setWord();
 			}
 			// checks for a win and resets the game
@@ -99,7 +100,7 @@ var hangmanGame = {
 				this.victoryState = true;
 				this.winCount++;
 				this.win_count.innerHTML = this.winCount;
-				alert("You guessed the word:  " + this.activeWord)
+				alert("You guessed the word:  " + this.activeWord);
 				this.setWord();
 			}
 		}
